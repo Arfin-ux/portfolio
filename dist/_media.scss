@@ -1,0 +1,175 @@
+// Tablets and smalls
+@media (max-width: 800px) {
+  #header-home {
+    height: 35rem;
+
+    .header-content {
+      height: 25rem;
+
+      h1 {
+        padding-top: 5rem;
+        font-size: 2rem;
+      }
+      .lead {
+        font-size: 1rem;
+      }
+
+      // background: none;
+    }
+  }
+}
+
+// Smartphones
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      padding: 1rem;
+    }
+  }
+  #header {
+    &-home {
+      height: 30rem;
+      border-bottom: 3px solid $main-color;
+      background-position: 20% 30%;
+      .header-content {
+        // display: none;
+        height: 25rem;
+        h1 {
+          font-size: 1.2rem;
+          padding-top: 10rem;
+        }
+        .lead {
+          font-size: 0.6rem;
+        }
+        // margin-top: 7rem;
+
+        .btn-light {
+          padding: 0.5rem 1rem;
+          font-size: 0.5rem;
+          margin-top: -0.5rem;
+        }
+      }
+    }
+
+    &-inner {
+      height: 10rem;
+    }
+  }
+
+  // Stack grid columns
+  #home-a .specials,
+  #home-b .stats,
+  #home-c .process,
+  .items,
+  #contact-b .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  #home {
+    &-a {
+      .specials div {
+        border-bottom: 1px $light-color solid;
+        padding-bottom: 1rem;
+
+        &:last-child {
+          border: none;
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    &-b {
+      .stats div {
+        padding: 2rem 1rem;
+      }
+    }
+  }
+
+  // About
+  #about {
+    &-a {
+      .about-info {
+        grid-template-areas:
+          'bioimage'
+          'bio'
+          'aw1'
+          'aw2'
+          'aw3';
+      }
+    }
+
+    &-c {
+      display: none;
+    }
+
+    &-d {
+      .testimonials {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  // Contact
+  #contact {
+    &-a {
+      .text-fields {
+        grid-template-areas:
+          'name'
+          'subject'
+          'email'
+          'phone'
+          'message';
+      }
+    }
+
+    &-b {
+      div {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px #555 solid;
+
+        &:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding: 0;
+        }
+      }
+    }
+    &-c {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  // Footer
+  #main-footer {
+    height: 7rem;
+
+    .footer-content {
+      flex-direction: column;
+      padding: 1rem;
+      height: 5rem;
+    }
+  }
+}
+
+// Landscape
+@media (max-width: 580px) {
+  #header-home {
+    .header-content {
+      padding-top: 3rem;
+    }
+  }
+}
+
+@media (max-height: 330px) {
+  #header-home {
+    .header-content {
+      font-size: 2rem;
+    }
+  }
+}
