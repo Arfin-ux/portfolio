@@ -31,6 +31,7 @@
 .btn-dark {
   color: #f4f4f4;
   background: #333;
+  margin-top: 6rem;
 }
 
 button[class^='btn-']:hover,
@@ -562,7 +563,7 @@ img {
 
 #contact-a button[type='submit'] {
   width: 100%;
-  margin-bottom: -15rem;
+  margin-bottom: -5rem;
 }
 
 #contact-b .contact-info {
