@@ -620,6 +620,13 @@ img {
   #header-home .header-content .lead {
     font-size: 1rem;
   }
+  #about-a .about-info h2 {
+    margin-top: 5.5rem;
+    padding-bottom: 1rem;
+  }
+  #about-a .about-info p {
+    margin-bottom: 4rem;
+  }
 }
 
 @media (max-width: 500px) {
