@@ -43,6 +43,10 @@ input[class^='btn-']:hover {
   background: $main-color;
 }
 
+// White Paragraph
+.white {
+  color: #fff;
+}
 // Backgrounds
 .bg {
   &-main {
